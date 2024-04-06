@@ -1,0 +1,63 @@
+
+.card{
+    border: rgb(103, 102, 105) 3px solid;
+    display: flex;  
+    flex-direction: column;
+    margin-left:5%;
+    margin-right:5%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    height:80%;
+    position: relative;
+    
+  }
+.image-container{
+    margin-left:5%;
+    margin-right:5%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    align-self:center
+  }
+.image-container1{
+    margin-left:20%;
+    margin-right:5%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+  }
+.line{
+    position: absolute; 
+    border-left: 3px solid black;
+    height: 350px;
+    top: 500;
+    left:900px;
+  }
+.contact-details {
+    font-family: Arial, sans-serif;
+    color: #333; 
+    background-color: #f6f6f6; 
+    padding: 20px;
+    border-radius: 5px;
+    width: 25%;
+    position: absolute;
+    top: 480px; 
+    left: 1100px; 
+}
+  
+.contact-details p {
+    text-align: center;
+    margin: 10px 0;
+    font-size: 18px;
+    color: black;
+  }
+  
+.contact-details a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+.contact-details a:hover {
+    text-decoration: underline;
+  }
+  
+  
+  
