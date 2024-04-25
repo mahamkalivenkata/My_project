@@ -1,5 +1,13 @@
 {
   "esversion": 6,
   "moz": true,
-  "undef": true
+  "undef": true,
+  "globals": {
+    "require": false,
+    "module": false,
+    "res": false,
+    "data": false,
+    "console": false
+  }
 }
+
