@@ -1,5 +1,4 @@
 module.exports = {
-  root: true, // Indicates that this is the root ESLint configuration file
   parserOptions: {
     ecmaVersion: 12,
     sourceType: 'module'
