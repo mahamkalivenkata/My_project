@@ -1,21 +1,29 @@
 module.exports = {
-  env: {
-    browser: true,
-    es2021: true,
-    node: true
-  },
-  extends: 'eslint:recommended',
+  root: true, // Indicates that this is the root ESLint configuration file
   parserOptions: {
     ecmaVersion: 12,
     sourceType: 'module'
   },
+  extends: ['eslint:recommended'],
   rules: {
     indent: ['error', 2],
     'linebreak-style': ['error', 'unix'],
     quotes: ['error', 'single'],
     semi: ['error', 'always'],
-    'no-unused-vars': 'off', // Disable no-unused-vars rule
-    'no-console': 'off', // Disable no-console rule
     eqeqeq: ['error', 'always']
-  }
+  },
+  overrides: [
+    {
+      files: ['*.js'], // Apply the following configuration to JavaScript files
+      env: {
+        browser: true,
+        es2021: true,
+        node: true
+      },
+      rules: {
+        'no-unused-vars': 'off', // Disable no-unused-vars rule
+        'no-console': 'off' // Disable no-console rule
+      }
+    }
+  ]
 };
